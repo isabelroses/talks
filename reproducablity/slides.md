@@ -1,8 +1,10 @@
 ---
-theme: default
+layout: intro
+class: text-left
+title: Reproducibility
 defaults:
-    background: '/bg.svg'
-    class: text-center
+    style: 'background-image: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.533)), url("/bg.svg"); background-repeat: no-repeat; background-position: center center; background-size: cover;'
+    layout: center
 ---
 
 ## Reproducibility
@@ -19,7 +21,7 @@ defaults:
 
 ---
 
-So what's the solution?
+## So what's the solution?
 
 <!-- well most people might try to push you towards containerisation -->
 
@@ -43,10 +45,12 @@ So what's the solution?
 
 ---
 
-So what's the solution?
+## So what's the solution?
 
 <!-- at this point i was introduced to something called nix and thus NixOS, a fully declarative and reproducible environment -->
 
+---
+layout: intro
 ---
 
 ## Nix
@@ -55,49 +59,45 @@ So what's the solution?
 
 ---
 
-So what did this actually change?
+<div class="item-center">
 
----
+## So what did this actually change?
 
-- My neovim config
+<br>
 
----
-
-- My neovim config
-- My website
-
----
+<v-clicks fade-out class="text-left">
 
 - My neovim config
 - My website
 - My system configurations (even my Mac)
 
+</v-clicks>
+
+</div>
+
 <!-- these are all examples of things that I was now able to make completely reproducible and build declaratively. -->
 
 ---
 
-Is it worth the cost?
+## Is it worth the cost?
 
 <!-- I will be the first to admit that nix has a very steep learning curve but when you truly get it working it works like a charm -->
 
 ---
+
 ## Wrapping up
 
 ---
 
-- Use nix!
-
----
-
-- Use nix!
-- https://github.com/isabelroses/talks
-
-<!-- the notes for this talk is located on the GitHub repo there, along with some additional resources  -->
-
----
+<v-clicks>
 
 - Use nix!
 - https://github.com/isabelroses/talks
 - And if you really don't want to give up docker, nix can build docker images
 
-<!-- any questions -->
+</v-clicks>
+
+<!-- 
+    [click] the notes for this talk is located on the GitHub repo there, along with some additional resources
+    [click] any questions
+-->
