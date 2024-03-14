@@ -6,7 +6,7 @@ pkgs.mkShell {
     (pkgs.writeShellApplication {
       name = "serve";
       text = ''
-        python3 -m http.server -d ./result/dist/
+        python3 -m http.server -d ./result
       '';
     })
   ];
