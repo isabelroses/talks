@@ -11,7 +11,11 @@ defaults:
 
 -- Isabel --
 
-<!-- Introduce myself > I think one of the biggest issues we ever get told is _swap slide_ -->
+<!--
+Introduce myself
+
+I think one of the biggest issues we ever get told is _swap slide_
+-->
 
 ---
 

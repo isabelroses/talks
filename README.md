@@ -13,4 +13,4 @@ You can run any of the slides by entering the directory and running `pnpm run de
 
 ## License
 
-All of this repo is under the [CC BY-NC-SA 4.0](/LICENSE).
+All of this repo is under the [CC BY 4.0](./LICENCE).

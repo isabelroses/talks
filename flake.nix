@@ -2,10 +2,16 @@
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
   outputs = {nixpkgs, ...}: let
-    systems = ["aarch64-darwin" "aarch64-linux" "x86_64-darwin" "x86_64-linux"];
-    forAllSystems = fn: nixpkgs.lib.genAttrs systems (system: fn nixpkgs.legacyPackages.${system});
+    forAllSystems = nixpkgs.lib.genAttrs ["x86_64-linux" "x86_64-darwin" "i686-linux" "aarch64-linux" "aarch64-darwin"];
+    pkgsForEach = nixpkgs.legacyPackages;
   in {
-    devShells = forAllSystems (pkgs: {default = import ./shell.nix {inherit pkgs;};});
+    packages = forAllSystems (system: {
+      reproducablity = pkgsForEach.${system}.callPackage ./reproducablity.nix {};
+    });
+
+    devShells = forAllSystems (system: {
+      default = pkgsForEach.${system}.callPackage ./shell.nix {};
+    });
 
     formatter = forAllSystems (pkgs: pkgs.alejandra);
   };
