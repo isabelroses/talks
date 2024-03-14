@@ -1,0 +1,81 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "cmdr:macro-0",
+      "icon": "download",
+      "name": "Commander: Get New Files",
+      "mode": "any"
+    },
+    {
+      "id": "cmdr:macro-1",
+      "icon": "upload",
+      "name": "Commander: Upload Backup",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [
+    {
+      "macro": [
+        {
+          "action": 0,
+          "commandId": "obsidian-git:push"
+        },
+        {
+          "action": 1,
+          "delay": "350"
+        },
+        {
+          "action": 0,
+          "commandId": "obsidian-git:pull"
+        }
+      ],
+      "name": "Get New Files",
+      "icon": "download",
+      "startup": false
+    },
+    {
+      "macro": [
+        {
+          "action": 0,
+          "commandId": "obsidian-git:commit"
+        },
+        {
+          "action": 1,
+          "delay": "350"
+        },
+        {
+          "action": 0,
+          "commandId": "obsidian-git:push2"
+        }
+      ],
+      "name": "Upload Backup",
+      "icon": "upload",
+      "startup": false
+    }
+  ],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": "8",
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

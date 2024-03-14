@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "167bcc0a2b5b9cfc",
+    "type": "split",
+    "children": [
+      {
+        "id": "656f54811f9f87c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd4c16636a86ce85",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9172d9bb213e045a",
+    "type": "split",
+    "children": [
+      {
+        "id": "39ab385e91185633",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af8fccbd0fb88e81",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "07996b49244e7156",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0ad285721d198054",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "ab91728c8937698a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4e6a412ee1e3f1bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "30c8979232e3931c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abe55c1c9f7ad4cc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d5e92a99d070794f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "181806e5720f0283",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e3e5968f3bcdf489",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "66d66017f6967fa5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "3cea2e7238855dc3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "c0096f43932af4e8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 391.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": true,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "cmdr:Commander: Get New Files": false,
+      "cmdr:Commander: Upload Backup": false
+    }
+  },
+  "active": "cd4c16636a86ce85",
+  "lastOpenFiles": [
+    "reproducablity/presentation.md",
+    "reproducablity/bg.svg",
+    "reproducablity/devops.png",
+    "reproducablity/it_works_on_my_machine.png",
+    "reproducablity/docker.png",
+    "reproducablity/docker_image.png",
+    "reproducablity",
+    "tasks.md",
+    "thinking like a dev.md",
+    "Assets/download.svg",
+    "Assets/Pasted image 20240314101815.png",
+    "Assets/Pasted image 20240314101609.png",
+    "Assets/Pasted image 20240313185930.png",
+    "Assets/Pasted image 20240313185854.png",
+    "uni/CS10220/history-of-the-internet.md",
+    "uni/CS11010/urls.md",
+    "uni/CS11010/intro.md",
+    "uni/CS11010",
+    "uni/CS10720/numbers.md",
+    "uni/CS10720",
+    "uni/CS11110/cia.md",
+    "uni/CS11110",
+    "blog/why.md",
+    "blog/my-workflow.md",
+    "uni/CS10220/life-beyond-uni.md",
+    "uni/CS10220/Software And Memory.md",
+    "uni/CS10220/Non-Volatile Memory.md",
+    "uni/CS10220/memory and storage.md",
+    "uni/CS18120/Assignment speech for presentation.md",
+    "uni/CS10220/scripting-in-bash.md",
+    "uni/CS10220/unix-tools.md",
+    "uni/CS10220/cidr.md",
+    "uni/CS10220/internet-protocols.md",
+    "uni/CS12020/pointers.md",
+    "uni/CS10220/debugging.md",
+    "uni/CS10220/Tools on the command line.md",
+    "blog/Nixos.md",
+    "blog/Obsidian.mdx",
+    "blog/userstyles.md",
+    "blog/Nixos.mdx",
+    "blog/self-healing-urls.md",
+    "blog/Untitled",
+    "uni/CS18120",
+    "uni/CS12020",
+    "uni/CS10220",
+    "Untitled.canvas",
+    "Untitled.canvas"
+  ]
+}
