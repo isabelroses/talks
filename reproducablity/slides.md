@@ -1,10 +1,11 @@
 ---
-background: /bg.svg
-layout: center
-class: text-center
+theme: default
+defaults:
+    background: '/bg.svg'
+    class: text-center
 ---
- 
-# Reproducibility
+
+## Reproducibility
 
 -- Isabel --
 
@@ -64,6 +65,7 @@ So what did this actually change?
 
 - My neovim config
 - My website
+
 ---
 
 - My neovim config
@@ -91,7 +93,6 @@ Is it worth the cost?
 - https://github.com/isabelroses/talks
 
 <!-- the notes for this talk is located on the GitHub repo there, along with some additional resources  -->
-
 
 ---
 
