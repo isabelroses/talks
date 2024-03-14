@@ -38,7 +38,7 @@ stdenv.mkDerivation (finalAttrs: {
     '';
 
     outputHashMode = "recursive";
-    outputHash = "sha256-a9Kq1Kv/XLPGXaFD7SqQd8UiC+VRZQR4GLpPn4JAgh4=";
+    outputHash = "sha256-e1skamKQwrKNK+6Ryl7eBSPyfBnbY2WHC3+xsMwvPRM=";
   };
 
   nativeBuildInputs = [nodePackages.pnpm];
