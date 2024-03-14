@@ -54,8 +54,6 @@ I think one of the biggest issues we ever get told is _swap slide_
 <!-- at this point i was introduced to something called nix and thus NixOS, a fully declarative and reproducible environment -->
 
 ---
-layout: intro
----
 
 ## Nix
 
@@ -91,7 +89,7 @@ layout: intro
 
 ## Wrapping up
 
----
+<br>
 
 <v-clicks>
 
@@ -102,6 +100,8 @@ layout: intro
 </v-clicks>
 
 <!-- 
+    [click]
     [click] the notes for this talk is located on the GitHub repo there, along with some additional resources
+    [click]
     [click] any questions
 -->
