@@ -3,7 +3,7 @@ layout: intro
 class: text-left
 title: Reproducibility
 defaults:
-    style: 'background-image: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.533)), url("/bg.svg"); background-repeat: no-repeat; background-position: center center; background-size: cover;'
+    style: 'background-image: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.533)), url("/bg.svg"); background-repeat: no-repeat; background-position: center center; background-size: cover; --slidev-code-background: #1e1e2e;'
     layout: center
 ---
 
@@ -51,17 +51,21 @@ I think one of the biggest issues we ever get told is _swap slide_
 
 ## So what's the solution?
 
-<!-- at this point i was introduced to something called nix and thus NixOS, a fully declarative and reproducible environment -->
+<!-- 
+    if you have been paying a lot of attention you might've noticed the background image (which I made), is the nix logo.
+-->
 
 ---
 
 ## Nix
 
-<!-- if you have been paying a lot of attention you might've noticed the background image (which I made), is the nix logo, -->
+<!-- 
+    Nix and thus NixOS, a fully declarative and reproducible environment
+
+    But now you might ask,
+-->
 
 ---
-
-<div class="item-center">
 
 ## So what did this actually change?
 
@@ -75,15 +79,96 @@ I think one of the biggest issues we ever get told is _swap slide_
 
 </v-clicks>
 
-</div>
-
 <!-- these are all examples of things that I was now able to make completely reproducible and build declaratively. -->
+
+---
+
+````md magic-move
+```nix {*|9}
+{
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  }: {
+    packages = {};
+
+    nixosConfigurations = {};
+  };
+}
+```
+```nix {9-12}
+{
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  }: {
+    packages.example = {
+      nixpkgs.legacyPackages.x86_64-linux.callPackage ./example.nix {};
+    };
+  };
+}
+```
+```nix {12}
+{
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  }: {
+    packages = {};
+
+    nixosConfigurations = {};
+  };
+}
+```
+```nix {9-12}
+{
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  }: {
+    nixosConfigurations.example = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./example.nix
+        {boot.isContainer=true;}
+      ];
+    };
+  };
+}
+```
+````
+
+<!--
+So just to run through the absolute basics, here we have a completely empty nix flake.
+
+[click] With nix we can declaratively build pkgs
+
+[click] Lets take a look at one, here we have  a example pkg for the x84 64 bit linux architecture. This is of course not the only hardware that can run pkgs though.
+
+[click] Now i'll draw your attention to nixosConfigurations
+
+[click] taking a more in-depth look, we can declare all sorts of details of our system.
+-->
 
 ---
 
 ## Is it worth the cost?
 
-<!-- I will be the first to admit that nix has a very steep learning curve but when you truly get it working it works like a charm -->
+<!--
+I will be the first to admit, espessially from that last slide, that nix has a very steep learning curve but when you truly get it working it works like a charm
+-->
 
 ---
 
@@ -101,7 +186,6 @@ I think one of the biggest issues we ever get told is _swap slide_
 
 <!-- 
     [click]
-    [click] the notes for this talk is located on the GitHub repo there, along with some additional resources
-    [click]
+    [click] the notes for this talk is located on the GitHub repo there, along with some additional resources, and maybe even build this talk???
     [click] any questions
 -->
